@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Work/Q-Pros Task">
+        <classes>
+            <class name="tests.CartTests">
+                <methods>
+                    <include name="ValidateThatOrderAddedToCartCorrectly"/>
+                    <include name="ValidateThatItemRemovedFromCartCorrectly"/>
+                </methods>
+            </class>
+            <class name="tests.HomeTests">
+                <methods>
+                    <include name="ValidateThatPhonesCategoryHasItems"/>
+                    <include name="ValidateThatLaptopsCategoryHasItems"/>
+                    <include name="ValidateThatMonitorsCategoryHasItems"/>
+                </methods>
+            </class>
+            <class name="tests.LoginTests">
+                <methods>
+                    <include name="ValidateThatAppLoginSuccessfullyWhenEnteringValidUsernameAndPassword"/>
+                </methods>
+            </class>
+            <class name="tests.PlaceOrderTests">
+                <methods>
+                    <include name="ValidateThatOrderAddedToCartCorrectly"/>
+                </methods>
+            </class>
+            <class name="tests.ProductTests">
+                <methods>
+                    <include name="ValidateThatAddToCartButtonWorksCorrectly"/>
+                </methods>
+            </class>
+            <class name="tests.RegistrationTests">
+                <methods>
+                    <include name="ValidateThatAppRegisterSuccessfullyWithValidUsernameAndPassword"/>
+                    <include name="ValidateThatErrorMessageAppearsWhenRegisterWithExistedUsername"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
